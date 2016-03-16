@@ -94,3 +94,8 @@ Different features for collections include dates and places of exhibition, prove
 ### Access patterns are outside of the scope of curators and the model
 
 The ways in which an object can and should be displayed will be determined by the properties of the object rather than explicitly recorded as part of the object.  For example, a sequence of images does not require the depositor to decide that the images (in TIFF) should be transformed into Jpeg2000, nor that the system should present them in a pan/zoom gallery. Instead, the property that records the sequence of images are just individuals in an order, rather than pages of a book, plus their resolution and access restrictions can be used to determine how best to render the content to the user.
+
+
+## High Level Model Sketch
+
+![hybox](images/hybox.png)
