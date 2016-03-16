@@ -29,7 +29,7 @@ While the HyBox platform needs to have descriptive metadata capabilities, this p
 ```json
 {
     "id": "http://example.repo/id/1",
-	"type": "bf:Item",
+	"type": "Work",
 	"label": "Manuscript M640",
     "etc": "etc",
     "hasDigitalRepresentation": {
@@ -49,7 +49,7 @@ The MARC relators vocabulary has been identified as a potential source of intere
 ```json
 {
 	"id": "http://example.repo/id/1",
-	"type": "bf:Item",
+	"type": "Work",
 	"marcrel:aut": {
 		"id": "http://example.repo/people/8",
 		"name": {"fr": "Jehan Froissart"}
@@ -71,8 +71,8 @@ Unlike the vanilla `dc:identifier` string, we consider that identifiers are full
 ```json
 {
 	"id": "http://example.repo/id/1",
-	"type": "bf:Item",
-    "bf:identifiedBy": {
+	"type": "Work",
+    "identifiedBy": {
       "type": "ISBN",
       "value": ""
     }
