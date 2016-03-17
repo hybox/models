@@ -18,6 +18,13 @@ is thus acceptable compared to the more complex
 }
 ```
 
+### Data migration is more expensive than technology migration
+
+It is not a good practice to make long-lived and far reaching decisions based on current technology limitations, especially when there are open source options that can be developed as part of the community. Optimizing a model for those limitations is making a short term performance gain at the expense of much higher costs for later migration and change management.  The features that are being optimized for might be removed from the next release, or the bottlenecks you're trying to avoid might be fixed ... especially if you set aside time to fix them or replace the component with one that has better performance.
+
+The model should, therefore, be expressive and enable the requirements captured by the use cases.  Then, if there are issues with performance, first try to address it in the implementation layer, and only make compromises in the model that will lead to future costs as a last resort.
+
+
 ### Clear separation of Real World and Digital Objects allows easy replacement in different contexts
 
 While it takes slightly more implementation effort, and there is a performance impact of creating and managing more objects in the persistence system, the value of keeping the digital object's identity separate from the real world object's identity enables and promotes later extensions and revisions.  It is not possible for any one system to _a priori_ have models for all possible content types, especially as there are already multiple ontologies and descriptive systems in use within every community.  With a clearly described set of expectations (an API) for what information is required about the RWO, the linked data model and persistence layer can be changed out to accomodate these new, emerging requirements.
