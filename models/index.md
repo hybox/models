@@ -8,7 +8,7 @@
 
 ## Specific Models
 
-* [Object Structure][structure]
+* [Object Structure](structure)
 * [Real World Objects][rwo]
 * [Agents][agents]
 * [Permissions][permissions]
