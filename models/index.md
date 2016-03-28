@@ -8,7 +8,7 @@
 
 ## Specific Models
 
-* [Object Structure](structure)
+* [Object Structure][structure]
 * [Real World Objects][rwo]
 * [Agents][agents]
 * [Permissions][permissions]
@@ -17,6 +17,14 @@
 * [Concepts][concepts]
 
 
+
+[structure]: structure.md
+[rwo]: rwo.md
+[agents]: agents.md
+[permissions]: permissions.md
+[identifiers]: identifiers.md
+[places]: places.md
+[concepts]: concepts.md
 
 
 
