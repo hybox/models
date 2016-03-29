@@ -36,6 +36,30 @@ The following diagram lays out the basic structure of the HyBox model:
 * [Concepts][concepts] (the description of genres, subjects, topics, forms, and other "authorities")
 
 
+## Namespaces
+
+In all of the models referenced above the following namespace declarations are used:
+
+| Prefix  | URI                                                  |
+|---------|------------------------------------------------------|
+| acl     | http://www.w3.org/ns/auth/acl#                       |
+| dc      | http://purl.org/dc/elements/1.1/                     |
+| dcterms | http://purl.org/dc/terms/                            |
+| dpla    | http://dp.la/about/map/                              |
+| edm     | http://europeana.eu/schemas/edm/                     |
+| pcdm    | http://pcdm.org/models#                              |
+| foaf	  | http://xmlns.com/foaf/0.1/                           |
+| gen     | http://www.w3.org/2006/gen/ont#                      |
+| gn      | http://www.geonames.org/ontology#                    |
+| iana    | http://www.iana.org/assignments/relation/            |
+| ldp	  | http://www.w3.org/ns/ldp#                            |
+| ore     | http://www.openarchives.org/ore/terms/               |
+| rdf     | http://www.w3.org/1999/02/22-rdf-syntax-ns#          |
+| rdfs    | http://www.w3.org/2000/01/rdf-schema#                |
+| skos    | http://www.w3.org/2004/02/skos/core#                 |
+| works   | http://pcdm.org/works#                               | 
+
+
 [principles]: /notes/design_principles.md
 [structure]: structure.md
 [rwo]: rwo.md

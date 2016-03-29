@@ -21,11 +21,17 @@ skos:Concept
   skos:exactMatch (MAY)
 
 
+### Usage
+
+
+
 
 ### External Taxonomies
 
 * http://id.loc.gov/
 * http://www.getty.edu/research/tools/vocabularies/index.html
+* https://www.w3.org/2001/sw/wiki/SKOS/Datasets
+
 
 
 
