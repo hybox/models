@@ -9,12 +9,14 @@ The scope of the work is guided by the content types and is intented to be incre
 
 ## Overview
 
-* The structure of the content is divided into Collections, Objects, and Parts.  These can be nested to create hierarchies.
+* The structure of the content is divided into Collections and Objects.  These can be nested to create hierarchies.
 * A FileSet is used to maintain a grouping of original binary content, and its derivatives such as a master TIFF image, the JPG access copy, and the PNG thumbnail.
-* Files are the actual bitstreams, and can be described by Technical Metadata
+* Files are the actual bitstreams, and can be described by Technical Metadata.
 * Permissions are handled via Web ACLs, which refer to an Agent (such as a Person) and grant authoritizations over actions that person can take.  ACLs can be associated with any resource, including both the structural linked data and the binary content Files.
-* Real World Objects, such as the physical book that the scanned repository object represents, are separate from the repository object structure.  HyBox provides a minimal...
+* Real World Objects, such as the physical book that the scanned repository object represents, are separate from the repository object structure.  HyBox provides a minimal set of descriptive fields and relationships.
+* Concepts, Agents, Places, and Identifiers are treated as the most important descriptive resources to share between descriptions.
 
+The following diagram lays out the basic structure of the HyBox model:
 
 ![Overview Diagram](images/high_level.png)
 
@@ -23,7 +25,6 @@ The scope of the work is guided by the content types and is intented to be incre
 * [Object Structure][structure] (the structure of managed resources)
   * Collection
   * Object
-  * Part
   * FileSet
   * Content
   * Technical
