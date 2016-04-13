@@ -43,6 +43,7 @@ In all of the models referenced above the following namespace declarations are u
 | Prefix  | URI                                                  |
 |---------|------------------------------------------------------|
 | acl     | http://www.w3.org/ns/auth/acl#                       |
+| bf      | http://bibframe.org/vocab/                           |
 | dc      | http://purl.org/dc/elements/1.1/                     |
 | dcterms | http://purl.org/dc/terms/                            |
 | dpla    | http://dp.la/about/map/                              |
