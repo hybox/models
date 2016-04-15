@@ -33,7 +33,7 @@ The following diagram lays out the basic structure of the HyBox model:
 * [Permissions][permissions] (the interaction between managed resources and agents' actions)
 * [Identifiers][identifiers] (the description of legacy, non-URI identifiers)
 * [Places][places] (the description of places)
-* [Concepts][concepts] (the description of genres, subjects, topics, forms, and other "authorities")
+* [Concepts][concepts] (the description of genres, subjects, topics, and other "authorities")
 
 
 ## Namespaces
@@ -54,6 +54,7 @@ In all of the models referenced above the following namespace declarations are u
 | gn      | http://www.geonames.org/ontology#                    |
 | iana    | http://www.iana.org/assignments/relation/            |
 | ldp	  | http://www.w3.org/ns/ldp#                            |
+| marcrel | http://id.loc.gov/vocabulary/relators/               |
 | ore     | http://www.openarchives.org/ore/terms/               |
 | rdf     | http://www.w3.org/1999/02/22-rdf-syntax-ns#          |
 | rdfs    | http://www.w3.org/2000/01/rdf-schema#                |
