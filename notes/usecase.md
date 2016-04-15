@@ -23,6 +23,7 @@ _:fs1 a pcdmw:FileSet ;
 
 _:donor1 a pcdmw:Work ;
   rdfs:label "Collection Donor Agreement" ;
+  edm:isRepresentationOf _:rwo2 ;
   pcdm:hasMember _:fs2 .
 
 _:fs2 a pcdmw:FileSet ;
@@ -37,6 +38,7 @@ _:rwo1 a dpla:SourceResource ;
   dc:descrition "A collection of rare postcards, collected between 1985 and 2005 by J. Smith" ;
   dc:rights "This collection of postcards is owned by Prof. J. Smith, and held by Jones University" ;
   marcrel:rps _:org2 ;
+  marcrel:cur _:curator1 ;
   dcterms:subject <http://id.loc.gov/authorities/subjects/sh85105462> .
 
 _:smith1 a foaf:Person ;
@@ -58,6 +60,16 @@ _:place1 a edm:Place ;
 
 _:org2 a foaf:Organization ;
   rdfs:label "Jones University" . 
+
+_:rwo2 a dpla:SourceResource ;
+  dc:title "Agreement between Smith and Jones University" ;
+  dc:date "2014" ;
+  marcel:sgn _:smith1, _:curator1 ;
+  dc:description "Governing agreement under which the postcard collection is managed" .  
+
+_curator1 a foaf:Person ;
+  foaf:name "Molly Jones" ;
+  schema:affiliation _:org2 .
 
 _:pc1 a pcdmw:Work ;
   rdfs:label "Postcard" ;
