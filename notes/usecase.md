@@ -3,8 +3,8 @@
 
 ## Description
 
-A postcard collector donates his collection of historical and valuable postcards to an institution.  The collection, the postcards and the related resources are digitized and described, to be managed in a Hydra based platform.
-
+A postcard collector, J Smith, donates his collection of historical and valuable postcards to an institution.  The collection, the postcards and the related resources are digitized and described, to be managed in a Hydra based platform.  The collection has three postcards in it, sent by and to various people.  The collection is governed by a donor agreement, and managed by Jones University.
+The first postcard is from Jane Bloggs to Joe Cantor, on the subject of her pet cat.
 
 ```
 _:c1 a pcdm:Collection ;
@@ -21,7 +21,7 @@ _:fs1 a pcdmw:FileSet ;
   rdfs:label "Collection Thumbnail Image" ;
   pcdm:hasFile </cti/files/thumbnail.jpg>, </cti/files/thumbnail.png> .
 
-_:donor1 a pcdm:Object ;
+_:donor1 a pcdmw:Work ;
   rdfs:label "Collection Donor Agreement" ;
   pcdm:hasMember _:fs2 .
 
@@ -67,6 +67,7 @@ _:pc1 a pcdmw:Work ;
 
 _:front1 a pcdm:Object ;
   rdfs:label "Front of Postcard" ;
+  xxx:
   pcdm:hasMember _:frontfs1 .
 
 _:frontfs1 a pcdmw:FileSet ;
@@ -104,5 +105,17 @@ _:rwopc1 a dpla:SourceResource ;
   marcrel:rps _:org2 ;
   dcterms:subject <http://id.loc.gov/authorities/subjects/sh85021262> ;
   dcterms:medium <http://id.loc.gov/authorities/subjects/sh85105462> .
-```
 
+_:bloggs1 a foaf:Person ;
+  foaf:name "Jane Bloggs" ;
+  schema:birthDate "1820" ;
+  schema:deathDate "1886" ;
+  foaf:knows _:cantor1 .
+
+_:cantor1 a foaf:Person ;
+  foaf:name "Joe Cantor" ;
+  schema:birthDate "1819" ;
+  schema:deathDate "1858" ;
+  foaf:knows _:bloggs1 .
+
+```
