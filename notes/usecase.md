@@ -11,24 +11,56 @@ _:c1 a pcdm:Collection ;
   rdfs:label "Postcard Collection";
   edm:isRepresentationOf _:rwo1 ;
   pcdm:hasMember _:pc1, _:pc2, _:pc3 ;
-  pcdm:hasRelatedObject _:tn1, _:donor1 .
+  pcdmw:hasFileSet _:tn1 ;
+  pcdm:hasRelatedObject _:donor1 .
 
-_:tn1 a pcdm:Object ;
-  rdfs:label "Collection Thumbnail" ;
-  pcdm:hasMember _:fs1 .
-
-_:fs1 a pcdmw:FileSet ;
+_:tn1 a pcdmw:FileSet ;
   rdfs:label "Collection Thumbnail Image" ;
-  pcdm:hasFile </cti/files/thumbnail.jpg>, </cti/files/thumbnail.png> .
+  pcdmw:hasMaster </cti/files/thumbnail.jpg> ;
+  pcdm:hasFile </cti/files/thumbnail.png> .
 
-_:donor1 a pcdmw:Work ;
+_:donor1 a pcdm:Object ;
   rdfs:label "Collection Donor Agreement" ;
   edm:isRepresentationOf _:rwo2 ;
   pcdm:hasMember _:fs2 .
 
 _:fs2 a pcdmw:FileSet ;
   rdfs:label "Collection Donor Agreement Document" ;
-  pcdm:hasFile </cda/files/donorAgreement.pdf>, </cda/files/donorAgreement.html> ;
+  pcdmw:hasMaster </cda/files/donorAgreement.pdf> .
+
+_:pc1 a pcdm:Object ;
+  rdfs:label "Postcard" ;
+  edm:isRepresentationOf _:rwopc1 ;
+  pcdm:hasMember _:front1, _:back1 ;
+  pcdmw:hasFileSet _:tn2 .
+
+_:tn2 a pcdmw:FileSet ;
+  rdfs:label "Postcard Thumbnail Image" ;
+  pcdmw:hasMaster </tn2/files/thumbnail.jpg> .
+
+_:front1 a pcdm:Object ;
+  rdfs:label "Front of Postcard" ;
+  pcdmw:hasFileSet _:frontfs1 .
+
+_:frontfs1 a pcdmw:FileSet ;
+  rdfs:label "Front of Postcard Image" ;
+  pcdmw:hasMaster </frontfs1/files/front.jp2> ;
+  pcdm:hasFile </frontfs1/files/front.jpg> .
+
+_:back1 a pcdm:Object ;
+  rdfs:label "Back of Postcard" ;
+  pcdmw:hasFileSet _:backfs1, _:backfs2 .
+
+_:backfs1 a pcdmw:FileSet ;
+  rdfs:label "Back of Postcard Image" ;
+  pcdmw:hasMaster </backfs1/files/back.jp2> ;
+  pcdm:hasFile </backfs1/files/back.jpg> .
+
+_:backfs2 a pcdms:FileSet ;
+  rdfs:label "Back of Postcard Transcription" ;
+  pcdmw:hasMaster </backfs2/files/tei.xml> ;
+  pcdm:hasFile </backfs2/files/transcription.txt> .
+
 
 _:rwo1 a dpla:SourceResource ;
   dc:title "Postcard Collection of Prof. J. Smith" ;
@@ -70,40 +102,6 @@ _:rwo2 a dpla:SourceResource ;
 _curator1 a foaf:Person ;
   foaf:name "Molly Jones" ;
   schema:affiliation _:org2 .
-
-_:pc1 a pcdmw:Work ;
-  rdfs:label "Postcard" ;
-  edm:isRepresentationOf _:rwopc1 ;
-  pcdm:hasMember _:front1, _:back1 ;
-  pcdm:hasRelatedObject _:tn2 .
-
-_:front1 a pcdm:Object ;
-  rdfs:label "Front of Postcard" ;
-  pcdm:hasMember _:frontfs1 .
-
-_:frontfs1 a pcdmw:FileSet ;
-  rdfs:label "Front of Postcard Image" ;
-  pcdm:hasFile </frontfs1/files/front.jp2>, </frontfs1/files/front.jpg> .
-
-_:back1 a pcdm:Object ;
-  rdfs:label "Back of Postcard" ;
-  pcdm:hasMember _:backfs1, _:backfs2 .
-
-_:backfs1 a pcdmw:FileSet ;
-  rdfs:label "Back of Postcard Image" ;
-  pcdm:hasFile </backfs1/files/back.jp2>, </backfs1/files/back.jpg> .
-
-_:backfs2 a pcdms:FileSet ;
-  rdfs:label "Back of Postcard Transcription" ;
-  pcdm:hasFile </backfs2/files/tei.xml>, </backfs2/files/transcription.txt> .
-
-_:tn2 a pcdm:Object ;
-  rdfs:label "Postcard Thumbnail" ;
-  pcdm:hasMember _:tn2fs1 .
-
-_:fn2fs1 a pcdmw:FileSet ;
-  rdfs:label "Postcard Thumbnail Image" ;
-  pcdm:hasFile </fn2fs1/files/thumbnail.jpg> .
 
 _:rwopc1 a dpla:SourceResource ;
   dc:title "Postcard from Bloggs to Cantor (1843)" ;
