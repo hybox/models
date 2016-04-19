@@ -22,7 +22,7 @@ _:tn1 a pcdmw:FileSet ;
 _:donor1 a pcdm:Object ;
   rdfs:label "Collection Donor Agreement" ;
   edm:isRepresentationOf _:rwo2 ;
-  pcdm:hasMember _:fs2 .
+  pcdm:hasFileSet _:fs2 .
 
 _:fs2 a pcdmw:FileSet ;
   rdfs:label "Collection Donor Agreement Document" ;
@@ -130,13 +130,6 @@ _:cantor1 a foaf:Person ;
   foaf:knows _:bloggs1 .
 
 ```
-
-## Outstanding Questions
-
-* How to say the front of the postcard has the artwork which is a painting?
-
-* How to say that the thumbnail depicts the first three postcards?
-  * foaf:depicts implies the Object is also a foaf:Image, which is a Document. Could be from all of the bitstream resources, but that's wasteful when at least the FileSet and likely also the Object really stand for the image.
 
 
 

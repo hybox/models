@@ -5,22 +5,10 @@
 
 ### Model
 
-* pcdm:Collection
-  * pcdm:hasMember --> Collection, Work, Object
-  * pcdm:hasRelatedObject --> Work, Object
-  
-* pcdmw:Work
-  * pcdm:hasMember --> Object, Work, FileSet
-  * pcdm:hasRelatedObject --> Work, Object
-
-* pcdm:Object
-  * pcdm:hasMember --> Object, FileSet
-  * pcdm:hasRelatedObject --> Work, Object
-
 * pcdmw:FileSet
+  * rdfs:label
   * pcdm:hasFile --> File
-
-* pcdm:File
+  * pcdmw:hasMaster --> File [non-ldp managed]
 
 ### Defining Objects
 

@@ -5,22 +5,13 @@
 
 ### Model
 
-* pcdm:Collection
-  * pcdm:hasMember --> Collection, Work, Object
-  * pcdm:hasRelatedObject --> Work, Object
-  
-* pcdmw:Work
-  * pcdm:hasMember --> Object, Work, FileSet
-  * pcdm:hasRelatedObject --> Work, Object
-
-* pcdm:Object
-  * pcdm:hasMember --> Object, FileSet
-  * pcdm:hasRelatedObject --> Work, Object
-
-* pcdmw:FileSet
-  * pcdm:hasFile --> File
-
 * pcdm:File
+  * rdf:type
+  * iana:describedBy  (RDFSource for Metadata)
+  * premis:hasMessageDigest
+  * premis:hasSize
+  * dc:format [rather than ebucore:hasMimeType]
+  * ebucore:filename
 
 ### Defining Objects
 

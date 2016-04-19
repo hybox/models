@@ -6,21 +6,13 @@
 ### Model
 
 * pcdm:Collection
-  * pcdm:hasMember --> Collection, Work, Object
-  * pcdm:hasRelatedObject --> Work, Object
-  
-* pcdmw:Work
-  * pcdm:hasMember --> Work, Object, FileSet
-  * pcdm:hasRelatedObject --> Work, Object
+  * rdfs:label
+  * pcdm:hasMember --> Collection, Object
+  * pcdm:hasRelatedObject --> Object
+  * pcdmw:hasFileSet --> FileSet
+  * edm:isRepresentationOf --> dpla:SourceResource
 
-* pcdm:Object
-  * pcdm:hasMember --> Work, Object, FileSet
-  * pcdm:hasRelatedObject --> Work, Object
-
-* pcdmw:FileSet
-  * pcdm:hasFile --> File
-
-* pcdm:File
+Note that with the use of FileSets, collections SHOULD NOT also have Files.
 
 ### Defining Objects
 
