@@ -16,8 +16,8 @@ _:c1 a pcdm:Collection ;
 
 _:tn1 a pcdmw:FileSet ;
   rdfs:label "Collection Thumbnail Image" ;
-  pcdmw:hasMaster </cti/files/thumbnail.jpg> ;
-  pcdm:hasFile </cti/files/thumbnail.png> .
+  pcdmw:hasMaster </tn1/files/thumbnail.jpg> ;
+  pcdm:hasFile </tn1/files/thumbnail.jpg>, </cti/files/thumbnail.png> .
 
 _:donor1 a pcdm:Object ;
   rdfs:label "Collection Donor Agreement" ;
@@ -26,7 +26,8 @@ _:donor1 a pcdm:Object ;
 
 _:fs2 a pcdmw:FileSet ;
   rdfs:label "Collection Donor Agreement Document" ;
-  pcdmw:hasMaster </cda/files/donorAgreement.pdf> .
+  pcdmw:hasMaster </fs2/files/donorAgreement.pdf> ;
+  pcdm:hasFile </fs2/files/donorAgreement.pdf> .
 
 _:pc1 a pcdm:Object ;
   rdfs:label "Postcard" ;
@@ -36,7 +37,8 @@ _:pc1 a pcdm:Object ;
 
 _:tn2 a pcdmw:FileSet ;
   rdfs:label "Postcard Thumbnail Image" ;
-  pcdmw:hasMaster </tn2/files/thumbnail.jpg> .
+  pcdmw:hasMaster </tn2/files/thumbnail.jpg> ;
+  pcdm:hasFile </tn2/files/thumbnail.jpg> .
 
 _:front1 a pcdm:Object ;
   rdfs:label "Front of Postcard" ;
@@ -45,7 +47,7 @@ _:front1 a pcdm:Object ;
 _:frontfs1 a pcdmw:FileSet ;
   rdfs:label "Front of Postcard Image" ;
   pcdmw:hasMaster </frontfs1/files/front.jp2> ;
-  pcdm:hasFile </frontfs1/files/front.jpg> .
+  pcdm:hasFile </frontfs1/files/front.jp2>, </frontfs1/files/front.jpg> .
 
 _:back1 a pcdm:Object ;
   rdfs:label "Back of Postcard" ;
@@ -54,12 +56,12 @@ _:back1 a pcdm:Object ;
 _:backfs1 a pcdmw:FileSet ;
   rdfs:label "Back of Postcard Image" ;
   pcdmw:hasMaster </backfs1/files/back.jp2> ;
-  pcdm:hasFile </backfs1/files/back.jpg> .
+  pcdm:hasFile </backfs1/files/back.jp2>, </backfs1/files/back.jpg> .
 
 _:backfs2 a pcdms:FileSet ;
   rdfs:label "Back of Postcard Transcription" ;
   pcdmw:hasMaster </backfs2/files/tei.xml> ;
-  pcdm:hasFile </backfs2/files/transcription.txt> .
+  pcdm:hasFile </backfs2/files/tei.xml>, </backfs2/files/transcription.txt> .
 
 
 _:rwo1 a dpla:SourceResource ;
