@@ -22,7 +22,7 @@ _:tn1 a pcdmw:FileSet ;
 _:donor1 a pcdm:Object ;
   rdfs:label "Collection Donor Agreement" ;
   edm:isRepresentationOf _:rwo2 ;
-  pcdm:hasFileSet _:fs2 .
+  pcdmw:hasFileSet _:fs2 .
 
 _:fs2 a pcdmw:FileSet ;
   rdfs:label "Collection Donor Agreement Document" ;
