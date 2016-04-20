@@ -14,12 +14,12 @@
 * dcterms:rightsHolder (SHOULD)
 * dcterms:subject (SHOULD)
 * dcterms:isPartOf (MAY)
-* dcterms:contributor (MAY)
-* dcterms:extent (MAY)
 * edm:hasType (MAY)
 * dcterms:medium (MAY)
 * bf:identifiedBy (MAY)
+* dcterms:contributor (MAY)
 * dcterms:publisher (MAY)
+* marcrel:rps (MAY)
 
 ### Usage
 
@@ -27,4 +27,6 @@
 #### Defining New RWOs
 
 #### References to RWOs
+
+* edm:isRepresentationOf
 
