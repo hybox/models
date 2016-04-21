@@ -3,7 +3,7 @@
 
 ## Description
 
-http://alexandria.ucsb.edu/lib/ark:/48907/f35x2743
+More complex booklet of postcards: http://alexandria.ucsb.edu/lib/ark:/48907/f35x2743
 
 ```
 _:c1 a pcdm:Collection ;
@@ -25,8 +25,11 @@ _:page1 a pcdm:Object ;
   edm:isRepresentationOf _:postoffice, _:concert, _:cityhall ;
   pcdmw:hasFileSet _:fs2 .
 
-
-
+_:fs2 a pcdmw:FileSet ;
+  rdfs:label "Page 1 Image" ;
+  svcs:has_service <http://adrlprod1.library.ucsb.edu/images/3b%2Fae%2F7b%2F67%2F3bae7b67-bee6-41fa-8023-3f524c2ed780%2Foriginal/> ;
+  pcdmu:hasOriginalFile </fs2/files/master.jp2> ;
+  pcdm:hasFile </fs2/files/master.jp2>, </fs2/files/thumbnail.jpg> .
 
 
 _:rwo1 a dpla:SourceResource ;
@@ -58,15 +61,14 @@ _:ark2 a _:ArkIdentifier ;
 
 _:postoffice a dpla:SourceResource ;
   dc:title "Post Office" ;
-  dcterms:medium <http://id.loc.gov/authorities/subjects/sh85105462> ;
+  dcterms:medium <http://id.loc.gov/authorities/subjects/sh85105462> .
 
 _:concert a dpla:SourceResource ;
   dc:title "Afternoon Concert, Bath House" ;
-  dcterms:medium <http://id.loc.gov/authorities/subjects/sh85105462> ;
+  dcterms:medium <http://id.loc.gov/authorities/subjects/sh85105462> .
 
 _:cityhall a dpla:SourceResource ;
   dc:title "City Hall" ;
-  dcterms:medium <http://id.loc.gov/authorities/subjects/sh85105462> ;
-
+  dcterms:medium <http://id.loc.gov/authorities/subjects/sh85105462> .
 
 ```
