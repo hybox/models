@@ -5,6 +5,7 @@
 
 A postcard collector, J Smith, donates his collection of historical and valuable postcards to an institution.  The collection, the postcards and the related resources are digitized and described, to be managed in a Hydra based platform.  The collection has three postcards in it, sent by and to various people.  The collection is governed by a donor agreement, and managed by Jones University.
 The first postcard is from Jane Bloggs to Joe Cantor, on the subject of her pet cat.
+The text of the postcard is later transcribed by a student studying Bloggs life and added to the repository.
 
 ```
 _:c1 a pcdm:Collection ;
@@ -16,7 +17,7 @@ _:c1 a pcdm:Collection ;
 
 _:tn1 a pcdmw:FileSet ;
   rdfs:label "Collection Thumbnail Image" ;
-  pcdmw:hasMaster </tn1/files/thumbnail.jpg> ;
+  pcdmu:hasOriginalFile </tn1/files/thumbnail.jpg> ;
   pcdm:hasFile </tn1/files/thumbnail.jpg>, </cti/files/thumbnail.png> .
 
 _:donor1 a pcdm:Object ;
@@ -26,7 +27,7 @@ _:donor1 a pcdm:Object ;
 
 _:fs2 a pcdmw:FileSet ;
   rdfs:label "Collection Donor Agreement Document" ;
-  pcdmw:hasMaster </fs2/files/donorAgreement.pdf> ;
+  pcdmu:hasOriginalFile </fs2/files/donorAgreement.pdf> ;
   pcdm:hasFile </fs2/files/donorAgreement.pdf> .
 
 _:pc1 a pcdm:Object ;
@@ -37,7 +38,7 @@ _:pc1 a pcdm:Object ;
 
 _:tn2 a pcdmw:FileSet ;
   rdfs:label "Postcard Thumbnail Image" ;
-  pcdmw:hasMaster </tn2/files/thumbnail.jpg> ;
+  pcdmu:hasOriginalFile </tn2/files/thumbnail.jpg> ;
   pcdm:hasFile </tn2/files/thumbnail.jpg> .
 
 _:front1 a pcdm:Object ;
@@ -46,7 +47,7 @@ _:front1 a pcdm:Object ;
 
 _:frontfs1 a pcdmw:FileSet ;
   rdfs:label "Front of Postcard Image" ;
-  pcdmw:hasMaster </frontfs1/files/front.jp2> ;
+  pcdmu:hasOriginalFile </frontfs1/files/front.jp2> ;
   pcdm:hasFile </frontfs1/files/front.jp2>, </frontfs1/files/front.jpg> .
 
 _:back1 a pcdm:Object ;
@@ -55,12 +56,14 @@ _:back1 a pcdm:Object ;
 
 _:backfs1 a pcdmw:FileSet ;
   rdfs:label "Back of Postcard Image" ;
-  pcdmw:hasMaster </backfs1/files/back.jp2> ;
+  pcdmu:hasOriginalFile </backfs1/files/back.jp2> ;
   pcdm:hasFile </backfs1/files/back.jp2>, </backfs1/files/back.jpg> .
 
 _:backfs2 a pcdms:FileSet ;
   rdfs:label "Back of Postcard Transcription" ;
-  pcdmw:hasMaster </backfs2/files/tei.xml> ;
+  pcdmu:hasOriginalFile </backfs2/files/tei.xml> ;
+  dcterms:creator _:student1 ;
+  dcterms:created "2015-09-23T16:00:00Z" ;
   pcdm:hasFile </backfs2/files/tei.xml>, </backfs2/files/transcription.txt> .
 
 
@@ -128,6 +131,9 @@ _:cantor1 a foaf:Person ;
   schema:birthDate "1819" ;
   schema:deathDate "1858" ;
   foaf:knows _:bloggs1 .
+
+_:student1 a foaf:Person ;
+  foaf:name "Ulrika Anderson" .
 
 ```
 
