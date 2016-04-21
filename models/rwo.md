@@ -20,6 +20,8 @@
 * dcterms:contributor (MAY)
 * dcterms:publisher (MAY)
 * marcrel:rps (MAY)
+* dcterms:extent (MAY)
+* dcterms:spatial (MAY)
 
 ### Usage
 
