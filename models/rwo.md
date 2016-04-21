@@ -21,7 +21,7 @@
 * dcterms:publisher (MAY)
 * marcrel:rps (MAY)
 * dcterms:extent (MAY)
-* schema:location (MAY)
+* dcterms:spatial (MAY)
 
 ### Usage
 

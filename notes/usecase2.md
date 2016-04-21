@@ -5,6 +5,8 @@
 
 More complex booklet of postcards: http://alexandria.ucsb.edu/lib/ark:/48907/f35x2743
 
+Note that on the second page there are three postcards in the page. The page has a single image, so the pcdm:Object is the representation of three different RWOs.
+
 ```
 _:c1 a pcdm:Collection ;
   rdfs:label "Santa Barbara picture postcards collection" ;
@@ -49,7 +51,7 @@ _:rwo2 a dpla:SourceResource ;
   dc:title "Souvenir of Santa Barbara, California" ;
   dcterms:extent "18 prints forming 1 item : color (postcard format)" ;
   bf:identifiedBy _:acc2, _:ark2 ;
-  schema:location <http://vocab.getty.edu/tgn/7017752> ;
+  dcterms:spatial <http://vocab.getty.edu/tgn/7017752> ;
   dc:date "circa 1900s-1950s" ;
   dc:description "Souvenir viewbook comprised of 18 postcards on accordion-folded pages." .
 
@@ -72,3 +74,7 @@ _:cityhall a dpla:SourceResource ;
   dcterms:medium <http://id.loc.gov/authorities/subjects/sh85105462> .
 
 ```
+
+## Model Diagram
+
+![postcard model](images/ucsb-postcards2.png)
