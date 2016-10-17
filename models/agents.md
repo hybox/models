@@ -3,6 +3,8 @@
 
 ### Introduction
 
+All listed classes are subclasses of `foaf:Agent`. 
+
 ### Model
 
 * foaf:Person
@@ -25,14 +27,17 @@
  * foaf:homepage (MAY)
  * foaf:knows (MAY)
  * schema:affiliation (MAY)
+ * foaf:account (MAY; see [permissions](permissions.md))
+ * org:memberOf (MAY; see [permissions](permissions.md) and [#30](https://github.com/hybox/models/issues/30))
 
 * foaf:Organization
-  * rdfs:label
+  * rdfs:label( MUST, unless there's foaf:name supplied)
+  * foaf:name (SHOULD)
 
 * foaf:Group
   * rdfs:label (MUST, unless there's foaf:name supplied)
   * foaf:name (SHOULD)
-  * foaf:member (MAY)
+  * foaf:member (MAY; see [permissions](permissions.md))
 
 ### Usage
 
