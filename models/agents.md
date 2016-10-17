@@ -12,7 +12,7 @@
  * foaf:givenName (MAY)
  * schema:additionalName (MAY)
  * schema:honorificPrefix (MAY)
- * scheme:honorificSuffix (MAY)
+ * schema:honorificSuffix (MAY)
 
  * foaf:gender (MAY)
  * schema:birthDate (MAY)
@@ -29,6 +29,10 @@
 * foaf:Organization
   * rdfs:label
 
+* foaf:Group
+  * rdfs:label (MUST, unless there's foaf:name supplied)
+  * foaf:name (SHOULD)
+  * foaf:member (MAY)
 
 ### Usage
 
