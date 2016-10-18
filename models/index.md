@@ -56,9 +56,13 @@ In all of the models referenced above the following namespace declarations are u
 | ldp	  | http://www.w3.org/ns/ldp#                            |
 | marcrel | http://id.loc.gov/vocabulary/relators/               |
 | ore     | http://www.openarchives.org/ore/terms/               |
+| org     | http://www.w3.org/ns/org#                            |
 | rdf     | http://www.w3.org/1999/02/22-rdf-syntax-ns#          |
 | rdfs    | http://www.w3.org/2000/01/rdf-schema#                |
+| schema  | http://schema.org/                                   |
+| sioc    | http://rdfs.org/sioc/ns#                             |
 | skos    | http://www.w3.org/2004/02/skos/core#                 |
+| webac   | http://fedora.info/definitions/v4/webac#             |
 | works   | http://pcdm.org/works#                               | 
 
 
