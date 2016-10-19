@@ -20,11 +20,11 @@ The Identifier model is designed to support the inclusion of identifiers for res
 
 ### `rdfs:Class`
 
-| Field             | Predicate                | Recommendation | Expected Value            |
-| ----------------- | ------------------------ | -------------- | ------------------------- |
-| *Subclass of*     | `rdfs:subClassOf`        | MUST           | `bf:Identifier` (itself)  |
-| *Label*           | `rdfs:label`             | SHOULD         | Literal                   |
-| *Note*            | `skos:note`              | SHOULD         | Literal                   |
+| Field             | Predicate                | Recommendation | Expected Value          |
+| ----------------- | ------------------------ | -------------- | ----------------------- |
+| *Subclass of*     | `rdfs:subClassOf`        | MUST           | `bf:Identifier` (class) |
+| *Label*           | `rdfs:label`             | SHOULD         | Literal                 |
+| *Note*            | `skos:note`              | SHOULD         | Literal                 |
 
 
 ### `rdf:Resource` (i.e. any Resource)

@@ -45,6 +45,7 @@ In all of the models referenced above the following namespace declarations are u
 | `acl:`     | http://www.w3.org/ns/auth/acl#                       |
 | `bf:`      | http://id.loc.gov/ontologies/bibframe/               |
 | `dc:`      | http://purl.org/dc/elements/1.1/                     |
+| `dcmitype:`| http://purl.org/dc/dcmitype/                         |
 | `dcterms:` | http://purl.org/dc/terms/                            |
 | `dpla:`    | http://dp.la/about/map/                              |
 | `edm:`     | http://europeana.eu/schemas/edm/                     |
