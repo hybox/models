@@ -57,6 +57,7 @@ In all of the models referenced above the following namespace declarations are u
 | marcrel | http://id.loc.gov/vocabulary/relators/               |
 | ore     | http://www.openarchives.org/ore/terms/               |
 | org     | http://www.w3.org/ns/org#                            |
+| prov    | http://www.w3.org/ns/prov#                           |
 | rdf     | http://www.w3.org/1999/02/22-rdf-syntax-ns#          |
 | rdfs    | http://www.w3.org/2000/01/rdf-schema#                |
 | schema  | http://schema.org/                                   |

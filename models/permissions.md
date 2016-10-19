@@ -2,11 +2,10 @@
 
 ### Introduction
 
-The permissions model represents the interaction between managed Resources and Agents' actions. Agents represent real entities and have associated Accounts used for authentication.
+The permissions model represents the interaction between managed Resources and Agents' actions. 
 
 ### Notes on implementation
 
-* Accounts are included in the model for completeness, but there is no assumption that they will be implemented as repository objects. Accounts may be managed in a separate database or application.
 * Access controls are defined using [WebAccessControl](https://www.w3.org/wiki/WebAccessControl).
 * Fedora makes some specific assumptions about WebAccessControl. See [WebAC Authorization Delegate](https://wiki.duraspace.org/display/FEDORA4x/WebAC+Authorization+Delegate) and its subpages for more detail.
 * IP-based authentication/authorization has not been addressed using this model yet. See [#52](https://github.com/hybox/models/issues/52).
@@ -17,7 +16,7 @@ The permissions model represents the interaction between managed Resources and A
 * `foaf:Agent` (see [agents](agents.md))
   * Note: An Agent may be both identified in an authentication/authorization context and referenced in descriptive metadata (e.g. as `dcterms:creator`). We make no distinction between these types of Agents.
 
-* `foaf:Account`
+* `foaf:Account` (see [accounts](agents.md#accounts))
   * `sioc:account_of` (MUST; see [#30](https://github.com/hybox/models/issues/30))
   * `foaf:accountName` (MUST)
   * `rdfs:label` (SHOULD)
