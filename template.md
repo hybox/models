@@ -10,10 +10,11 @@ model:
 
 # Model template
 
-This is a template for sample model documentation as used by the Hydra in a Box models repository.
+This is a Markdown template for sample model documentation as used by the Hydra in a Box models repository.
 
 **NOTES:**
 * The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+* All model documentation MUST comply with Github-flavored Markdown.
 * All sections MAY have one or more notes associated with them, indicated by the phrase `**NOTES:**` followed by a Markdown list.
 * Code-fenced blocks for Turtle MUST NOT be indented, regardless how the examples appear below.
 * All model documents MAY include Jekyll YAML frontmatter at the top. If including YAML frontmatter, it is RECOMMENDED to include a `model` key with a YAML mapping containing `organization` and `project` keys. The `model` key MAY have a `namespaces` key, which contains a mapping associating namespace prefixes with their base URIs.
