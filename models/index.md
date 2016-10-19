@@ -40,31 +40,32 @@ The following diagram lays out the basic structure of the HyBox model:
 
 In all of the models referenced above the following namespace declarations are used:
 
-| Prefix  | URI                                                  |
-|---------|------------------------------------------------------|
-| acl     | http://www.w3.org/ns/auth/acl#                       |
-| bf      | http://bibframe.org/vocab/                           |
-| dc      | http://purl.org/dc/elements/1.1/                     |
-| dcterms | http://purl.org/dc/terms/                            |
-| dpla    | http://dp.la/about/map/                              |
-| edm     | http://europeana.eu/schemas/edm/                     |
-| pcdm    | http://pcdm.org/models#                              |
-| foaf	  | http://xmlns.com/foaf/0.1/                           |
-| gen     | http://www.w3.org/2006/gen/ont#                      |
-| gn      | http://www.geonames.org/ontology#                    |
-| iana    | http://www.iana.org/assignments/relation/            |
-| ldp	  | http://www.w3.org/ns/ldp#                            |
-| marcrel | http://id.loc.gov/vocabulary/relators/               |
-| ore     | http://www.openarchives.org/ore/terms/               |
-| org     | http://www.w3.org/ns/org#                            |
-| prov    | http://www.w3.org/ns/prov#                           |
-| rdf     | http://www.w3.org/1999/02/22-rdf-syntax-ns#          |
-| rdfs    | http://www.w3.org/2000/01/rdf-schema#                |
-| schema  | http://schema.org/                                   |
-| sioc    | http://rdfs.org/sioc/ns#                             |
-| skos    | http://www.w3.org/2004/02/skos/core#                 |
-| webac   | http://fedora.info/definitions/v4/webac#             |
-| works   | http://pcdm.org/works#                               | 
+| Prefix     | URI                                                  |
+|------------|------------------------------------------------------|
+| `acl:`     | http://www.w3.org/ns/auth/acl#                       |
+| `bf:`      | http://bibframe.org/vocab/                           |
+| `dc:`      | http://purl.org/dc/elements/1.1/                     |
+| `dcterms:` | http://purl.org/dc/terms/                            |
+| `dpla:`    | http://dp.la/about/map/                              |
+| `edm:`     | http://europeana.eu/schemas/edm/                     |
+| `pcdm:`    | http://pcdm.org/models#                              |
+| `foaf:`    | http://xmlns.com/foaf/0.1/                           |
+| `gen:`     | http://www.w3.org/2006/gen/ont#                      |
+| `gn:`      | http://www.geonames.org/ontology#                    |
+| `iana:`    | http://www.iana.org/assignments/relation/            |
+| `ldp:`     | http://www.w3.org/ns/ldp#                            |
+| `marcrel:` | http://id.loc.gov/vocabulary/relators/               |
+| `ore:`     | http://www.openarchives.org/ore/terms/               |
+| `org:`     | http://www.w3.org/ns/org#                            |
+| `owl:`     | http://www.w3.org/2002/07/owl#                       |
+| `prov:`    | http://www.w3.org/ns/prov#                           |
+| `rdf:`     | http://www.w3.org/1999/02/22-rdf-syntax-ns#          |
+| `rdfs:`    | http://www.w3.org/2000/01/rdf-schema#                |
+| `schema:`  | http://schema.org/                                   |
+| `sioc:`    | http://rdfs.org/sioc/ns#                             |
+| `skos:`    | http://www.w3.org/2004/02/skos/core#                 |
+| `webac:`   | http://fedora.info/definitions/v4/webac#             |
+| `works:`   | http://pcdm.org/works#                               | 
 
 
 [principles]: /notes/design_principles.md
