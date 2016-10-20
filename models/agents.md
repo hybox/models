@@ -4,6 +4,18 @@
 
 Agents are a key class within the Hydra in a Box Model. Agents represent real entities and may have associated Accounts used for authentication. Agents can act on resources in the repository (i.e. authenticated users in the repository application) or act on resources outside the context of the repository (i.e. physical/analog resource creators, publishers, contributors, agents depicted in the resource, etc.).
 
+An Agent may be both identified in an authentication/authorization context and referenced in descriptive metadata (e.g. as `dcterms:creator`). We make no distinction between these types of Agents.
+
+## Use cases
+
+* Access rights and controls (see [permissions](permissions.md))
+* Self-submission and proxy deposit
+* Transfer of ownership
+* Annotations (Comments, Tags, Reviews, etc)
+* Recommender systems
+* Usage tracking / history / notifications
+* Personalization
+
 ## Model
 
 ![Agents and accounts diagram](images/agents.png)
