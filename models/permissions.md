@@ -10,9 +10,10 @@ The permissions model represents the interaction between managed Resources and A
     * Visibility levels: public, institution, private
 
 **NOTES:**
-* The following are open questions about how to handle this in the model:
+* The following are open questions (or `TODO`s) about how to handle this in the model:
     * [ ] IP authentication/authorization
     * [ ] User-submitted workflow/mediated deposit (see [#49](https://github.com/hybox/models/issues/49))
+    * [ ] Permission templates (see [#55](https://github.com/hybox/models/issues/55))
 
 ## Model
 
