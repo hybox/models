@@ -53,12 +53,16 @@ In all of the models referenced above the following namespace declarations are u
 | `foaf:`    | http://xmlns.com/foaf/0.1/                           |
 | `gen:`     | http://www.w3.org/2006/gen/ont#                      |
 | `gn:`      | http://www.geonames.org/ontology#                    |
+| `hyacl:`   | http://projecthydra.org/ns/auth/acl#                 |
+| `hybox:`   | http://hybox.info/ns#                                |
+| `hyrel:`   | http://projecthydra.org/ns/relations#                |
 | `iana:`    | http://www.iana.org/assignments/relation/            |
 | `ldp:`     | http://www.w3.org/ns/ldp#                            |
 | `marcrel:` | http://id.loc.gov/vocabulary/relators/               |
 | `ore:`     | http://www.openarchives.org/ore/terms/               |
 | `org:`     | http://www.w3.org/ns/org#                            |
 | `owl:`     | http://www.w3.org/2002/07/owl#                       |
+| `pcdm:`    | http://pcdm.org/models#                              |
 | `prov:`    | http://www.w3.org/ns/prov#                           |
 | `rdf:`     | http://www.w3.org/1999/02/22-rdf-syntax-ns#          |
 | `rdfs:`    | http://www.w3.org/2000/01/rdf-schema#                |
