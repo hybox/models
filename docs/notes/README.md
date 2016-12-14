@@ -1,5 +1,5 @@
 # Implementation Notes
 
-* [Scope and Agreements](notes/scope.md)
-* [Design Principles](notes/design_principles.md)
-* [DPLA MAP and PCDM](notes/dpla_map_and_pcdm.md)
+* [Scope and Agreements](scope.md)
+* [Design Principles](design_principles.md)
+* [DPLA MAP and PCDM](dpla_map_and_pcdm.md)

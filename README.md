@@ -20,6 +20,7 @@ Clone the remote repository:
 
 ```bash
 $ git clone https://github.com/hybox/models.git
+$ cd models
 ```
 
 Install the dependencies for this project:
