@@ -37,4 +37,4 @@ gulp.task('build-ebooks', () => {
 });
 
 gulp.task('default', ['clean', 'build', 'publish']);
-gulp.task('travis', ['clean', 'build']);
+gulp.task('travis', ['clean', 'build', 'build-ebooks']);
