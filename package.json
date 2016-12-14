@@ -17,6 +17,6 @@
     "gulp-gh-pages": "^0.5.4",
     "gulp-gitbook": "0.0.1",
     "gulp-load-plugins": "^1.4.0",
-    "q": "^1.4.1"
+    "gulp-shell": "^0.5.2"
   }
 }
