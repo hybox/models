@@ -1,6 +1,7 @@
 .publish
 _book
 _book/*
+_book/.keep
 node_modules/*
 yarn.lock
 *.pdf

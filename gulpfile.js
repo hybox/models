@@ -18,7 +18,7 @@ gulp.task('publish', () => {
 
 gulp.task('clean', () => {  
   console.log('Clean build directory');
-  return del('./_book/**/*');
+  return del(['./_book/**/*', '!./_book/.keep']);
 });
 
 gulp.task('build', function (cb) {
@@ -37,3 +37,4 @@ gulp.task('build-ebooks', () => {
 });
 
 gulp.task('default', ['clean', 'build', 'publish']);
+gulp.task('travis', ['clean', 'build']);
