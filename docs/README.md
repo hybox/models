@@ -1,1 +1,1 @@
-# Hydra in a Box Data Models
+# The Hydra in a Box Data Model

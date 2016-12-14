@@ -1,5 +1,7 @@
 {
     "root": "docs",
+    "title": "Hydra in a Box Data Model",
+    "author": "Hydra in a Box Project",
     "links": {
         "sidebar": {
             "Hydra in a Box Project": "http://hydrainabox.projecthydra.org/"
