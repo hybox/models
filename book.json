@@ -1,0 +1,36 @@
+{
+    "root": "docs",
+    "links": {
+        "sidebar": {
+            "Hydra in a Box Project": "http://hydrainabox.projecthydra.org/"
+        }
+    },
+    "plugins": ["github", "expandable-chapters-small"],
+    "pluginsConfig": {
+      "github": {
+        "url": "https://github.com/hybox/models/"
+      }
+    },
+    "contributors": [
+        {
+            "name": "Rob Sanderson",
+            "organization": "J. Paul Getty Trust",
+            "orcid": "https://orcid.org/0000-0003-4441-6852"
+        },
+        {
+            "name": "Thomas Johnson",
+            "organization": "University of Washington",
+            "orcid": "https://orcid.org/0000-0001-6726-6397"
+        },
+        {
+            "name": "Mark A. Matienzo",
+            "organization": "Stanford University",
+            "orcid": "https://orcid.org/0000-0003-3270-1306"
+        },
+        {   
+            "name": "Christina Harlow",
+            "organization": "Cornell University",
+            "orcid": "https://orcid.org/0000-0003-4932-9221"
+        }
+    ]
+}

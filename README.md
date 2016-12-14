@@ -1,37 +1,35 @@
+# Hydra in a Box data model documentation
 
-## Scope
+This data model documentation is built using [GitBook](https://toolchain.gitbook.com/).
 
-The scope of this work includes:
+## Getting started
 
-* Data Modeling
-  * The structures and usage of the actual content
+You will need a working install of NodeJS and NPM to get started. On macOS:
 
-* Metadata Modeling
-  * Descriptive
-  * Administrative
-  * Rights
-  * Technical
+```bash
+$ brew install npm
+```
 
-* Linked Data modeling of technical requirements
-  * Ontology selection and development where no existing ontology suffices
-  * JSON-LD context and frame specification
+Follow the [GitBook](https://toolchain.gitbook.com/setup.html) installation instructions to get a working GitBook environment:
 
-* Protocol requirements regarding Linked Data
-  * Web ACL
-  * LDP projection
+```bash
+$ npm install gitbook-cli -g
+```
 
+Clone the remote repository:
 
-## Out of Scope
+```bash
+$ git clone https://github.com/hybox/models.git
+```
 
-* APIs
-* Implementation pattern requirements
+Install the dependencies for this project:
 
+```bash
+$ gitbook install
+```
 
-## Agreements
+Edit, and then to preview your changes:
 
-* All models will be in RDF, following the Linked Data best practices
-* Core ontologies to build application profiles on include PCDM, DC, EDM/DPLA, FOAF, WebACL, ...
-* JSON-LD will a primary serialization
-* LDP will be the base interaction model
-* We will use the outcomes of Hydra Metadata WGs and engage with them
-
+```bash
+$ gitbook serve
+```
