@@ -1,7 +1,0 @@
-_book
-_book/*
-node_modules/*
-yarn.lock
-*.pdf
-*.epub
-*.mobi

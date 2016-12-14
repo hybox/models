@@ -1,0 +1,614 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Design Principles · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="dpla_map_and_pcdm.html" />
+    
+    
+    <link rel="prev" href="scope.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://hydrainabox.projecthydra.org/" target="_blank" class="custom-link">Hydra in a Box Project</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../contributors.html">
+            
+                <a href="../contributors.html">
+            
+                    
+                    Contributors and Acknowledgements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Implementation Notes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="scope.html">
+            
+                <a href="scope.html">
+            
+                    
+                    Scope and Agreements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="design_principles.html">
+            
+                <a href="design_principles.html">
+            
+                    
+                    Design Principles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="dpla_map_and_pcdm.html">
+            
+                <a href="dpla_map_and_pcdm.html">
+            
+                    
+                    DPLA MAP and PCDM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../models/">
+            
+                <a href="../models/">
+            
+                    
+                    Data Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../models/structure.html">
+            
+                <a href="../models/structure.html">
+            
+                    
+                    Structure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../models/structure/collection.html">
+            
+                <a href="../models/structure/collection.html">
+            
+                    
+                    Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../models/structure/object.html">
+            
+                <a href="../models/structure/object.html">
+            
+                    
+                    Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../models/structure/fileset.html">
+            
+                <a href="../models/structure/fileset.html">
+            
+                    
+                    Fileset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../models/structure/file.html">
+            
+                <a href="../models/structure/file.html">
+            
+                    
+                    File
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../models/rwo.html">
+            
+                <a href="../models/rwo.html">
+            
+                    
+                    Real World Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../models/agents.html">
+            
+                <a href="../models/agents.html">
+            
+                    
+                    Agents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../models/permissions.html">
+            
+                <a href="../models/permissions.html">
+            
+                    
+                    Permissions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../models/identifiers.html">
+            
+                <a href="../models/identifiers.html">
+            
+                    
+                    Identifiers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../models/places.html">
+            
+                <a href="../models/places.html">
+            
+                    
+                    Places
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../models/concepts.html">
+            
+                <a href="../models/concepts.html">
+            
+                    
+                    Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../usecases/">
+            
+                <a href="../usecases/">
+            
+                    
+                    Use Cases
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../usecases/postcards.html">
+            
+                <a href="../usecases/postcards.html">
+            
+                    
+                    Postcards
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../usecases/postcard_booklet.html">
+            
+                <a href="../usecases/postcard_booklet.html">
+            
+                    
+                    Postcard booklet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../usecases/thesis_and_dataset.html">
+            
+                <a href="../usecases/thesis_and_dataset.html">
+            
+                    
+                    Thesis and dataset
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Design Principles</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="design-principles-for-data-modeling-in-hybox">Design Principles for Data Modeling in HyBox</h2>
+<h3 id="use-discovery-and-search-requirements-as-a-pragmatic-means-to-determine-the-needed-extent-of-the-modeling-efforts">Use discovery and search requirements as a pragmatic means to determine the needed extent of the modeling efforts</h3>
+<p>For example, physical description of a postcard is intended only to be recorded and displayed to the user and is not intended to be interoperable in terms of description across objects.  Given the above principle, the physical description can be a simple string with arbitrary content, understandable to the human end-user but not to a machine for comparison.</p>
+<pre><code class="lang-json">{<span class="hljs-string">&quot;dc:extent&quot;</span>: <span class="hljs-string">&quot;3x4 inches&quot;</span>}
+</code></pre>
+<p>is thus acceptable compared to the more complex</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;height&quot;</span>: {<span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-number">3</span>, <span class="hljs-string">&quot;units&quot;</span>: <span class="hljs-string">&quot;in&quot;</span>},
+  <span class="hljs-string">&quot;width&quot;</span>: {<span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-number">4</span>, <span class="hljs-string">&quot;units&quot;</span>: <span class="hljs-string">&quot;in&quot;</span>}
+}
+</code></pre>
+<h3 id="data-migration-is-more-expensive-than-technology-migration">Data migration is more expensive than technology migration</h3>
+<p>It is not a good practice to make long-lived and far reaching decisions based on current technology limitations, especially when there are open source options that can be developed as part of the community. Optimizing a model for those limitations is making a short term performance gain at the expense of much higher costs for later migration and change management.  The features that are being optimized for might be removed from the next release, or the bottlenecks you&apos;re trying to avoid might be fixed ... especially if you set aside time to fix them or replace the component with one that has better performance.</p>
+<p>The model should, therefore, be expressive and enable the requirements captured by the use cases.  Then, if there are issues with performance, first try to address it in the implementation layer, and only make compromises in the model that will lead to future costs as a last resort.</p>
+<h3 id="clear-separation-of-real-world-and-digital-objects-allows-easy-replacement-in-different-contexts">Clear separation of Real World and Digital Objects allows easy replacement in different contexts</h3>
+<p>While it takes slightly more implementation effort, and there is a performance impact of creating and managing more objects in the persistence system, the value of keeping the digital object&apos;s identity separate from the real world object&apos;s identity enables and promotes later extensions and revisions.  It is not possible for any one system to <em>a priori</em> have models for all possible content types, especially as there are already multiple ontologies and descriptive systems in use within every community.  With a clearly described set of expectations (an API) for what information is required about the RWO, the linked data model and persistence layer can be changed out to accomodate these new, emerging requirements.</p>
+<p>Separation of the two allows for interesting use cases to be handled consistently, where they might prove challenging without the separation.  For example, if the back of a photograph has some writing on it, but is not digitized, then without the separation of Object and FileSet, there would be no resource to maintain an in-model transcription or description of the writing.  It also allows for one Object to have multiple FileSets, rather than merging them together or requiring that FileSets also have FileSets.</p>
+<p>While the HyBox platform needs to have descriptive metadata capabilities, this pattern intentionally limits the scope of initial modeling efforts without restricting future additions.</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;http://example.repo/id/1&quot;</span>,
+    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;Work&quot;</span>,
+    <span class="hljs-string">&quot;label&quot;</span>: <span class="hljs-string">&quot;Manuscript M640&quot;</span>,
+    <span class="hljs-string">&quot;etc&quot;</span>: <span class="hljs-string">&quot;etc&quot;</span>,
+    <span class="hljs-string">&quot;hasDigitalRepresentation&quot;</span>: {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;http://example.repo/id/2&quot;</span>,
+        <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;pcdm:Object&quot;</span>,
+        <span class="hljs-string">&quot;hasMember&quot;</span>: [ {}, {}, {} ]
+    }
+}
+</code></pre>
+<h3 id="people-places-and-their-relationships-are-critical-features">People, places, and their relationships are critical features</h3>
+<p>Beyond the core repository functions of managing digital content and its structure, People and Places were identified as critical for search and discovery.  Additionally, they provide understandable, real world anchors on which to pivot to demonstrate the value of Linked Data as the core framework, rather than just another record format.  As such, they will require models and the identification of a core set of relationships with the real world objects.  Thus People and Places will be managed as entities within the system, rather than as strings in a record, and linked to from other resources.</p>
+<p>The MARC relators vocabulary has been identified as a potential source of interesting relationships to be explored.</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;http://example.repo/id/1&quot;</span>,
+    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;Work&quot;</span>,
+    <span class="hljs-string">&quot;marcrel:aut&quot;</span>: {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;http://example.repo/people/8&quot;</span>,
+        <span class="hljs-string">&quot;name&quot;</span>: {<span class="hljs-string">&quot;fr&quot;</span>: <span class="hljs-string">&quot;Jehan Froissart&quot;</span>}
+    }
+}
+</code></pre>
+<h3 id="rwo-events-are-not-in-scope-for-the-first-phase">RWO Events are not in scope for the first phase</h3>
+<p>Archival and Museum objects are often described in terms of events within their life cycle, especially to track ownership and exhibition history. An event is seen as an activity or action that has actors, and occurs at a certain time and place.  For example, the artist paints a portrait of the sitter in Paris in 1704.  Management of events as resources is not seen as being in scope for the first phase of HyBox work, however following the separation of real world and digital objects, there should be scope for interested parties to extend the model with information of this sort.</p>
+<p>On the other hand, repository level events are seen as being in scope for the work to track the versioning of a resource, its audit trail and so forth.  Development work in this area should keep the above in mind and consider whether it is possible to handle both types of event with one set of code.</p>
+<h3 id="identifiers-are-resources">Identifiers are Resources</h3>
+<p>Unlike the vanilla <code>dc:identifier</code> string, we consider that identifiers are full resources that can have relationships and properties.  In particular, identifiers have a type (e.g. CODEN, ISSN, DOI, Handle, LCCN, Dewey, ...)  which may be only of local significance, and a value.  They can also be deprecated or replaced.  They can be associated with both real world objects, or with digital objects.</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;http://example.repo/id/1&quot;</span>,
+    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;Work&quot;</span>,
+    <span class="hljs-string">&quot;identifiedBy&quot;</span>: {
+      <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;ISBN&quot;</span>,
+      <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    }
+}
+</code></pre>
+<h3 id="the-repository-cares-about-derivatives">The Repository cares about derivatives</h3>
+<p>While some file formats can be easily managed as a single resource with derivatives automatically generated and cached for performance, there are also many other formats where this is not possible.  Audio and Video transcoding is not universally understood, and there may be custom settings applied to individual objects to obtain the best results.</p>
+<p>Secondly, derivatives may include representations that involve human interaction, creativity and decision making.  These outputs of activity need to be preserved as they cannot be automatically recreated.  Examples include the cropping of page images to remove the scanning bed, the generation of filmstrip thumbnail images to represent a video, or simply the selection of the most interesting part of the most appropriate representative image from a manuscript.  This implies that the depositor or curator can select this representative part, rather than it being automatically determined by the system.</p>
+<p>The relationship between master and derivative should be maintained in the repository, and these files and relationships should be able to be bulk imported.</p>
+<h3 id="access-ux-is-outside-of-the-scope-of-the-model">Access UX is outside of the scope of the model</h3>
+<p>The ways in which an object can and should be displayed will be determined by the properties of the object rather than explicitly recorded as part of the object.  For example, a sequence of images does not require the depositor to decide that the images (in TIFF) should be transformed into Jpeg2000, nor that the system should present them in a pan/zoom gallery. Instead, the property that records the sequence of images are just individuals in an order, rather than pages of a book, plus their resolution and access restrictions can be used to determine how best to render the content to the user.</p>
+<p>This means that the user does not need to select a user experience pattern up front, for which they may not have sufficient information to make a sensible choice.  The user also does not need to know the internal workings of the system, to say that their images should be transcoded. It further means that, as the model does not need to capture such decisions, there does not need to be remediation of those decisions when UI/UX expectations and implementations change.  Technology changes much faster than data, and we need to plan responsibly for future enhancements.</p>
+<h3 id="collection-information-is-important">Collection information is important</h3>
+<p>Different features for collections include dates and places of exhibition, provenance information, and so forth.  Many of the features of objects will be useful, and the exact nature of collection description needs to be discussed and decided upon.</p>
+<h2 id="high-level-model-sketch">High Level Model Sketch</h2>
+<p><img src="images/hybox.png" alt="hybox"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="scope.html" class="navigation navigation-prev " aria-label="Previous page: Scope and Agreements">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="dpla_map_and_pcdm.html" class="navigation navigation-next " aria-label="Next page: DPLA MAP and PCDM">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Design Principles","level":"1.3.2","depth":2,"next":{"title":"DPLA MAP and PCDM","level":"1.3.3","depth":2,"path":"notes/dpla_map_and_pcdm.md","ref":"notes/dpla_map_and_pcdm.md","articles":[]},"previous":{"title":"Scope and Agreements","level":"1.3.1","depth":2,"path":"notes/scope.md","ref":"notes/scope.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","expandable-chapters-small"],"root":"docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/hybox/models/"},"expandable-chapters-small":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"contributors":[{"name":"Rob Sanderson","organization":"J. Paul Getty Trust","orcid":"https://orcid.org/0000-0003-4441-6852"},{"name":"Thomas Johnson","organization":"University of Washington","orcid":"https://orcid.org/0000-0001-6726-6397"},{"name":"Mark A. Matienzo","organization":"Stanford University","orcid":"https://orcid.org/0000-0003-3270-1306"},{"name":"Christina Harlow","organization":"Cornell University","orcid":"https://orcid.org/0000-0003-4932-9221"}],"links":{"sidebar":{"Hydra in a Box Project":"http://hydrainabox.projecthydra.org/"}},"gitbook":"*"},"file":{"path":"notes/design_principles.md","mtime":"2016-12-14T01:28:43.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-14T03:38:30.941Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

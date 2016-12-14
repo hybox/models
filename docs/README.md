@@ -1,1 +1,0 @@
-# The Hydra in a Box Data Model
