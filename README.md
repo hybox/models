@@ -1,6 +1,8 @@
 # Hydra in a Box data model documentation
 
-This data model documentation is built using [GitBook](https://toolchain.gitbook.com/).
+[![Build Status](https://travis-ci.org/hybox/models.svg?branch=master)](https://travis-ci.org/hybox/models)
+
+This data model documentation is built using [GitBook](https://toolchain.gitbook.com/), supported by a set of Gulp tasks.
 
 ## Getting started
 
@@ -52,6 +54,23 @@ Ensure all your changes are committed, and then run the following:
 $ gulp publish
 ```
 
+## Optional: Building ebooks (PDF, ePUB, and MOBI)
+
+GitBook allows for publishing ebooks as part of the process, but adds a dependency on [Calibre](https://calibre-ebook.com/). See the [GitBook documentation](https://toolchain.gitbook.com/ebook.html) for more information.
+
+On macOS:
+
+```bash
+$ brew tap Caskroom/cask
+$ brew install Caskroom/cask/calibre
+```
+
+To build the ebooks (into the `_book`) directory:
+
+```bash
+$ gulp build-ebooks
+```
+
 ## Troubleshoooing
 
-Follow the [GitBook](https://toolchain.gitbook.com/setup.html) installation instructions to get a working GitBook environment if the above doesn't work.
+Automated builds run on Travis-CI. Follow the [GitBook](https://toolchain.gitbook.com/setup.html) installation instructions to get a working GitBook environment if the above doesn't work.
