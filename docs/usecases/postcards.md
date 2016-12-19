@@ -4,10 +4,9 @@
 ## Description
 
 A postcard collector, J Smith, donates his collection of historical and valuable postcards to an institution.  The collection, the postcards and the related resources are digitized and described, to be managed in a Hydra based platform.  The collection has three postcards in it, sent by and to various people.  The collection is governed by a donor agreement, and managed by Jones University.
-The first postcard is from Jane Bloggs to Joe Cantor, on the subject of her pet cat.
-The text of the postcard is later transcribed by a student studying Bloggs life and added to the repository.
+The first postcard is from Jane Bloggs to Joe Cantor, on the subject of her pet cat. The text of the postcard is later transcribed by a student studying Bloggs life and added to the repository.
 
-```
+```turtle
 _:c1 a pcdm:Collection ;
   rdfs:label "Postcard Collection";
   edm:isRepresentationOf _:rwo1 ;

@@ -3,7 +3,6 @@
 * [Introduction](README.md)
 * [Contributors and Acknowledgements](contributors.md)
 * [Implementation Notes](notes/README.md)
-    * [Scope and Agreements](notes/scope.md)
     * [Design Principles](notes/design_principles.md)
     * [DPLA MAP and PCDM](notes/dpla_map_and_pcdm.md)
 * [Data Models](models/README.md)

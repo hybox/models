@@ -7,7 +7,7 @@ More complex booklet of postcards: http://alexandria.ucsb.edu/lib/ark:/48907/f35
 
 Note that on the second page there are three postcards in the page. The page has a single image, so the pcdm:Object is the representation of three different RWOs.
 
-```
+```turtle
 _:c1 a pcdm:Collection ;
   rdfs:label "Santa Barbara picture postcards collection" ;
   edm:isRepresentationOf _:rwo1 ;

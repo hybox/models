@@ -1,7 +1,14 @@
+# Design Principles for Data Modeling in HyBox
 
-## Design Principles for Data Modeling in HyBox
+## High-Level Agreements
 
-### Use discovery and search requirements as a pragmatic means to determine the needed extent of the modeling efforts
+* All models will be in RDF, following the Linked Data best practices.
+* Core ontologies to build application profiles on include PCDM, DC, EDM/DPLA, FOAF, WebACL, ...
+* JSON-LD will a primary serialization.
+* [LDP](https://www.w3.org/TR/ldp/) will be the base interaction model.
+* We will use the outcomes of Hydra Metadata Interest Group and their subgroups, and engage with them as the modeling activity moving forward.
+
+## Use discovery and search requirements as a pragmatic means to determine the needed extent of the modeling efforts
 
 For example, physical description of a postcard is intended only to be recorded and displayed to the user and is not intended to be interoperable in terms of description across objects.  Given the above principle, the physical description can be a simple string with arbitrary content, understandable to the human end-user but not to a machine for comparison.
 
@@ -18,14 +25,13 @@ is thus acceptable compared to the more complex
 }
 ```
 
-### Data migration is more expensive than technology migration
+## Data migration is more expensive than technology migration
 
 It is not a good practice to make long-lived and far reaching decisions based on current technology limitations, especially when there are open source options that can be developed as part of the community. Optimizing a model for those limitations is making a short term performance gain at the expense of much higher costs for later migration and change management.  The features that are being optimized for might be removed from the next release, or the bottlenecks you're trying to avoid might be fixed ... especially if you set aside time to fix them or replace the component with one that has better performance.
 
 The model should, therefore, be expressive and enable the requirements captured by the use cases.  Then, if there are issues with performance, first try to address it in the implementation layer, and only make compromises in the model that will lead to future costs as a last resort.
 
-
-### Clear separation of Real World and Digital Objects allows easy replacement in different contexts
+## Clear separation of Real World and Digital Objects allows easy replacement in different contexts
 
 While it takes slightly more implementation effort, and there is a performance impact of creating and managing more objects in the persistence system, the value of keeping the digital object's identity separate from the real world object's identity enables and promotes later extensions and revisions.  It is not possible for any one system to _a priori_ have models for all possible content types, especially as there are already multiple ontologies and descriptive systems in use within every community.  With a clearly described set of expectations (an API) for what information is required about the RWO, the linked data model and persistence layer can be changed out to accomodate these new, emerging requirements.
 
@@ -35,7 +41,7 @@ While the HyBox platform needs to have descriptive metadata capabilities, this p
 
 ```json
 {
-    "id": "http://example.repo/id/1",
+  "id": "http://example.repo/id/1",
 	"type": "Work",
 	"label": "Manuscript M640",
     "etc": "etc",
@@ -47,7 +53,7 @@ While the HyBox platform needs to have descriptive metadata capabilities, this p
 }
 ```
 
-### People, places, and their relationships are critical features
+## People, places, and their relationships are critical features
 
 Beyond the core repository functions of managing digital content and its structure, People and Places were identified as critical for search and discovery.  Additionally, they provide understandable, real world anchors on which to pivot to demonstrate the value of Linked Data as the core framework, rather than just another record format.  As such, they will require models and the identification of a core set of relationships with the real world objects.  Thus People and Places will be managed as entities within the system, rather than as strings in a record, and linked to from other resources.
 
@@ -64,14 +70,14 @@ The MARC relators vocabulary has been identified as a potential source of intere
 }
 ```
 
-### RWO Events are not in scope for the first phase
+## RWO Events are not in scope for the first phase
 
 Archival and Museum objects are often described in terms of events within their life cycle, especially to track ownership and exhibition history. An event is seen as an activity or action that has actors, and occurs at a certain time and place.  For example, the artist paints a portrait of the sitter in Paris in 1704.  Management of events as resources is not seen as being in scope for the first phase of HyBox work, however following the separation of real world and digital objects, there should be scope for interested parties to extend the model with information of this sort.
 
 On the other hand, repository level events are seen as being in scope for the work to track the versioning of a resource, its audit trail and so forth.  Development work in this area should keep the above in mind and consider whether it is possible to handle both types of event with one set of code.
 
 
-### Identifiers are Resources
+## Identifiers are Resources
 
 Unlike the vanilla `dc:identifier` string, we consider that identifiers are full resources that can have relationships and properties.  In particular, identifiers have a type (e.g. CODEN, ISSN, DOI, Handle, LCCN, Dewey, ...)  which may be only of local significance, and a value.  They can also be deprecated or replaced.  They can be associated with both real world objects, or with digital objects.
 
@@ -86,7 +92,7 @@ Unlike the vanilla `dc:identifier` string, we consider that identifiers are full
 }
 ```
 
-### The Repository cares about derivatives
+## The Repository cares about derivatives
 
 While some file formats can be easily managed as a single resource with derivatives automatically generated and cached for performance, there are also many other formats where this is not possible.  Audio and Video transcoding is not universally understood, and there may be custom settings applied to individual objects to obtain the best results.
 
@@ -95,13 +101,13 @@ Secondly, derivatives may include representations that involve human interaction
 The relationship between master and derivative should be maintained in the repository, and these files and relationships should be able to be bulk imported.
 
 
-### Access UX is outside of the scope of the model
+## Access UX is outside of the scope of the model
 
-The ways in which an object can and should be displayed will be determined by the properties of the object rather than explicitly recorded as part of the object.  For example, a sequence of images does not require the depositor to decide that the images (in TIFF) should be transformed into Jpeg2000, nor that the system should present them in a pan/zoom gallery. Instead, the property that records the sequence of images are just individuals in an order, rather than pages of a book, plus their resolution and access restrictions can be used to determine how best to render the content to the user.
+The ways in which an object can and should be displayed will be determined by the properties of the object rather than explicitly recorded as part of the object.  For example, a sequence of images does not require the depositor to decide that the images (in TIFF) should be transformed into JPEG2000, nor that the system should present them in a pan/zoom gallery. Instead, the property that records the sequence of images are just individuals in an order, rather than pages of a book, plus their resolution and access restrictions can be used to determine how best to render the content to the user.
 
 This means that the user does not need to select a user experience pattern up front, for which they may not have sufficient information to make a sensible choice.  The user also does not need to know the internal workings of the system, to say that their images should be transcoded. It further means that, as the model does not need to capture such decisions, there does not need to be remediation of those decisions when UI/UX expectations and implementations change.  Technology changes much faster than data, and we need to plan responsibly for future enhancements.
 
-### Collection information is important
+## Collection information is important
 
 Different features for collections include dates and places of exhibition, provenance information, and so forth.  Many of the features of objects will be useful, and the exact nature of collection description needs to be discussed and decided upon.
 
